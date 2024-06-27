@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+     <style>
+        div{
+            height: 50px;
+            width: 50px;
+            border: 2px solid rgb(255, 255, 255);
+            /* display: none; */
+            color: white;
+        }
+        button{
+            margin-top: 300px;
+        }
+     </style>
+  </head>
+  <body>
+    <!-- choose num:<select name="" id="select" aria-expanded="true">
+      <option value="">first</option>
+      <option value="">second</option>
+      <option value="">third</option> -->
+    <!-- </select> -->
+    <div class="box">
+        <div>menu 1</div>
+        <div>menu 2</div>
+        <div>menu 3</div>
+        <div>menu 4</div>
+        <div>menu 5</div>
+      </ul>
+    </div>
+    <button class="btn">click</button>
+
+    <script>
+      let btn = document.querySelector(".btn");
+      let div = document.querySelector("div");
+      btn.addEventListener("click", () => {
+        div.style.color = "black";
+        div.style.borderColor = "black";
+      });
+    </script>
+  </body>
+</html>

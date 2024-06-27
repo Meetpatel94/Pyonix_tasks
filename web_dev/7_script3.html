@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Enter Two numbers: <br />
+    <input type="number" placeholder="Number 1" class="x" />
+    <input type="number" placeholder="Number 2" class="y" />
+    <br /><br />
+    <button class="add" onclick="add()">Addition</button>
+    <button class="sub" onclick="sub()">Subtraction</button>
+    <button class="mul" onclick="mul()">Multiplication</button>
+    <button class="divi" onclick="divi()">Divison</button>
+    <br /><br />
+    <strong>Result:</strong>
+    <strong class="result"></strong>
+
+    <script>
+      function add() {
+        let x = parseInt(document.querySelector(".x").value);
+        let y = parseInt(document.querySelector(".y").value);
+        let res = document.querySelector(".result");
+        res.innerHTML = x + y;
+      }
+      function sub() {
+        let x = parseInt(document.querySelector(".x").value);
+        let y = parseInt(document.querySelector(".y").value);
+        let res = document.querySelector(".result");
+        res.innerHTML = x - y;
+      }
+      function mul() {
+        let x = parseInt(document.querySelector(".x").value);
+        let y = parseInt(document.querySelector(".y").value);
+        let res = document.querySelector(".result");
+        res.innerHTML = x * y;
+      }
+      function divi() {
+        let x = parseInt(document.querySelector(".x").value);
+        let y = parseInt(document.querySelector(".y").value);
+        let res = document.querySelector(".result");
+        res.innerHTML = x / y;
+      }
+    </script>
+  </body>
+</html>

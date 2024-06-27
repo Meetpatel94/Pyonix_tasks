@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = [
+        { name: "John Doe", salary: 1800 },
+        { name: "Jane Smith", salary: 2200 },
+        { name: "Bob Johnson", salary: 2500 },
+      ];
+      for (const value in a) {
+        console.log(a[value]);
+      }
+      for (let i = 0; i <= a.length; i++) {
+        if (a[i].salary <= 2000) {
+          console.log((a[i].name + ":", a[i].salary * 10) / 100);
+        } else {
+          console.log((a[i].name + ":", a[i].salary * 5) / 100);
+        }
+      }
+    </script>
+  </body>
+</html>

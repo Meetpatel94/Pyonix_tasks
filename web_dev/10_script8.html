@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="popbox.css" />
+  </head>
+  <body>
+    <table border="1">
+      <tr>
+        <td>no</td>
+        <td>Name</td>
+        <td>Title</td>
+        <td colspan="2">Button</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>sunil</td>
+        <td>devdas</td>
+        <td><button popovertarget="edit1">Edit</button></td>
+        <td><button class="delt">Delete</button></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>mehul</td>
+        <td>coder</td>
+        <td><button popovertarget="edit2">Edit</button></td>
+        <td><button class="delt">Delete</button></td>
+      </tr>
+    </table>
+    <div popover id="edit1">
+      <h2>Hello</h2>
+      <br /><br />
+      <p>Hi sunil devadas how do you do?</p>
+    </div>
+    <div popover id="edit2">
+      <h2>Hello</h2>
+      <br /><br />
+      <p>Hi mehul what are you doin man!!</p>
+    </div>
+  </body>
+</html>

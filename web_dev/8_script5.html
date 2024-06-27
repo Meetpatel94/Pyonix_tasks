@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+      // ===========================Task_A===============================//
+      //Even numbers
+      for (let i = 1; i <= a.length; i++) {
+        i = i + 1;
+        console.log(i);
+      }
+      // ===========================Task_B2===============================//
+      for (let i = 1; i <= 1; i++) {
+        let sum = a.reduce((x, y) => x + y, 0);
+        console.log("sum=", sum);
+        let avg = sum / a.length;
+        console.log("avg=", avg);
+      }
+      // =============================Task_B3=============================//
+      let max = a[0];
+      let min = a[0];
+
+      for (let i = 0; i < a.length; i++) {
+        if (a[i] > max) {
+          max = a[i];
+        }
+        if (a[i] < min) {
+          min = a[i];
+        }
+      }
+      console.log("Max = " + max);
+      console.log("Min = " + min);
+      // =============================Task_B4=============================//
+      // print result
+    </script>
+  </body>
+</html>

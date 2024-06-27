@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  height: 500px;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #4c00ff 32%, rgb(255, 255, 255) 10%);
+}
+.img {
+  position: relative;
+  transform: translate(100%, 110%);
+  background-image: url("./images/download.jpg");
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-position: -4px 0;
+  background-size: cover;
+}
+.inner-box {
+  position: absolute;
+  bottom: 0;
+  height: 300px;
+  width: 296px;
+}
+button {
+  padding: 10px;
+  color: #fff;
+  background-color: blue;
+  border-radius: 20px;
+}
+p {
+  color: gray;
+}

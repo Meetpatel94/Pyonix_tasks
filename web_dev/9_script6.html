@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    Answer your que:
+    <span class="box"></span>
+    <script>
+      // Task--1
+      let a = parseInt(prompt("enter your  first num"));
+      let b = parseInt(prompt("enter your sec  num"));
+      let c;
+      let box = document.querySelector(".box");
+      //   c = a + b;
+      //   console.log("c:", c);
+      // Task--3
+      switch ((i = 1)) {
+        case 1:
+          c = a + b;
+          console.log(c);
+          box.innerHTML = c;
+          break;
+        case 2:
+          c = a - b;
+          console.log(c);
+          break;
+        case 3:
+          c = a * b;
+          console.log(c);
+          break;
+        case 4:
+          c = a / b;
+          console.log(c);
+          break;
+      }
+    </script>
+  </body>
+</html>
